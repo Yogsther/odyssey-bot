@@ -12,8 +12,6 @@ var names = ["yogsther", "agman100", "digitalmoleguy"];
 var channelID = "303200774383730689";
 /* The ID of the message channel you want the images to be posted in. */
 var messageChannelID = "425233729364164608";
-/* Choose what # to track, example #NintendoSwitch (defaulted hashtag when posting screenshots or videos from the Switch) */
-t.track("#NintendoSwitch");
 
 /* You can change, remove or add messages to these arrays if you want! */
 var photoResponses = ["a neat meme!", "a cool image!", "a tight photograph.", "some bulge...", "an ifunny worthy meme!", "a crazy photo!", "some meaty stuff!"];
@@ -40,6 +38,9 @@ t = new Twitter({
     token: fs.readFileSync("token.txt", "utf8"),
     token_secret: fs.readFileSync("token_secret.txt", "utf8")
 })
+
+/* Choose what # to track, example #NintendoSwitch (defaulted hashtag when posting screenshots or videos from the Switch) */
+t.track("#NintendoSwitch");
 
 
 
